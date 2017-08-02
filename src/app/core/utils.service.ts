@@ -44,4 +44,9 @@ export class UtilsService {
     const then = new Date(eventEnd.toString());
     return now >= then;
   }
+
+  tabIs(currentTab: string, tab: string): boolean {
+    // Check if current tab is tab name
+    return currentTab === tab;
+  }
 }

@@ -16,6 +16,10 @@ import { UtilsService } from './core/utils.service';
 import { FilterSortService } from './core/filter-sort.service';
 import { CallbackComponent } from './pages/callback/callback.component';
 import { LoadingComponent } from './core/loading.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { EventComponent } from './pages/event/event.component';
+import { EventDetailComponent } from './pages/event/event-detail/event-detail.component';
+import { RsvpComponent } from './pages/event/rsvp/rsvp.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { LoadingComponent } from './core/loading.component';
     HeaderComponent,
     FooterComponent,
     CallbackComponent,
-    LoadingComponent
+    LoadingComponent,
+    AdminComponent,
+    EventComponent,
+    EventDetailComponent,
+    RsvpComponent
   ],
   imports: [
     BrowserModule,
