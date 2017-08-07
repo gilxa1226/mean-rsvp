@@ -27,6 +27,8 @@ import { CreateEventComponent } from './pages/admin/create-event/create-event.co
 import { UpdateEventComponent } from './pages/admin/update-event/update-event.component';
 import { EventFormComponent } from './pages/admin/event-form/event-form.component';
 import { EventFormService } from './pages/admin/event-form/event-form.service';
+import { DeleteEventComponent } from './pages/admin/update-event/delete-event/delete-event.component';
+import { MyRsvpsComponent } from './pages/my-rsvps/my-rsvps.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { EventFormService } from './pages/admin/event-form/event-form.service';
     SubmittingComponent,
     CreateEventComponent,
     UpdateEventComponent,
-    EventFormComponent
+    EventFormComponent,
+    DeleteEventComponent,
+    MyRsvpsComponent
   ],
   imports: [
     BrowserModule,

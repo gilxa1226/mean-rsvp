@@ -48,6 +48,9 @@ app.use(cors());
 const port = process.env.PORT || '8083';
 app.set('port', port);
 
+// Serve static silent.html file at /silent
+app.use('/silent', express.static(path.join(__dirname, './silent.html')));
+
 // Set static path to Angular app in dist
 // Don't run in dev
 if (process.env.NODE_ENV !== 'dev') {

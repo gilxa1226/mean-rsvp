@@ -7,6 +7,7 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { EventComponent } from './pages/event/event.component';
 import { CreateEventComponent } from './pages/admin/create-event/create-event.component';
 import { UpdateEventComponent } from './pages/admin/update-event/update-event.component';
+import { MyRsvpsComponent } from './pages/my-rsvps/my-rsvps.component';
 
 
 import { AuthGuard } from './auth/auth.guard';
@@ -47,6 +48,13 @@ const routes: Routes = [
         path: 'event/update/:id',
         component: UpdateEventComponent
       }
+    ]
+  },
+  {
+    path: 'my-rsvps',
+    component: MyRsvpsComponent,
+    canActivate: [
+      AuthGuard
     ]
   }
 ];
